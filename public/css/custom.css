@@ -1,0 +1,80 @@
+p {
+	font-family: 'Bree Serif', serif;
+}
+
+
+.container .row-select{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ln1 {
+   display: flex;
+   justify-content: center;
+	align-items: center;
+}
+
+.ln1 p{
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 130px;
+	right: 225px;
+
+}
+
+.select-inline{
+	position: relative;
+	top: 230px;
+	left: 120px;
+}
+
+.select-inline ul{
+	list-style: none;
+	display: inline-flex;
+}
+
+.select-inline ul li{
+	margin: 10px;
+}
+
+  .button-select{
+  	color: white;
+	background: #27ae60;
+	border: none;
+	border-radius: 5px;
+	padding-left: 32px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 28px;
+}
+
+.button-submit{
+	color: white;
+	background: #2980b9;
+	border: none;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 12px;
+	padding-right: 10px;
+}
+
+.row .button-submit .material-icons{
+	position: relative;
+	top: 9px;
+	left: 5px;
+}
+
+footer{
+	background: #27ae60;
+	width: 100%;
+	height: 120px;
+	position: fixed;
+	bottom: 0px;
+}
+
+
