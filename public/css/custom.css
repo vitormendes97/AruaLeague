@@ -43,6 +43,23 @@ header .header-black {
 	font-size: 15px;
 }
 
+.container .dropdown{
+	position: relative;
+	top: 180px;
+	left: 88px;
+}
+
+#dropdownMenu1{
+    background: white;
+    border: none;
+    color: #e90052;
+    padding-top: 8px;
+    padding-bottom: 11px;
+}
+
+.league-drop li a:hover{
+    color: #e90052;
+}
 
 /*
 p {

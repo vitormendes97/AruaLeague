@@ -11,10 +11,10 @@
        <div class="container">
             <div class="row pull-right">
                 <ul>
-                <li>  <a href="">Home</a></li>
-                <li>  <a href="">Estatística</a></li>
-                <li>  <a href="">Rodada</a></li>
-                <li>  <a href="">Classificação</a></li>
+                <li>  <a href="<?php echo base_url('/home') ?>">Home</a></li>
+                <li>  <a href="<?php echo base_url('/estatistica') ?>">Estatística</a></li>
+                <li>  <a href="<?php echo base_url('/rodada') ?>">Rodada</a></li>
+                <li>  <a href="<?php echo base_url('/tabela') ?>">Classificação</a></li>
                 </ul>	
             </div>
        </div>
