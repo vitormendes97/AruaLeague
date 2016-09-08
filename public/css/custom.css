@@ -10,6 +10,17 @@ header {
 header .header-black {
 	background-color: black;
 	height: 40px;
+
+}
+
+.header-black li{
+	background-image: url('http://localhost:8080/public/img/sprite_clubs.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.header-blacl li.club-01{
+	background-position: -48px 0px;
 }
 
 #logotipo{
@@ -43,94 +54,204 @@ header .header-black {
 	font-size: 15px;
 }
 
-.container .dropdown{
+.dropdown{
+    position: relative;
+
+    top: 190px;
+    left: 366px;
+    display: inline;
+
+}
+
+.dropdown select{
+	display: inline;
+	margin: 15px;
+	border-color: black;
+	border-radius: 5px;
+}
+
+
+#league-select{
+	width: 17%;
+	
+	color: #e90052;
+}
+#year-select{
+	width: 17%;
+	
+	color: #e90052;
+}
+.waves-effect ,waves-light ,btn{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+#filter-btn{
+	height: 30px;
+	background: #34495e;
 	position: relative;
-	top: 180px;
-	left: 88px;
+	left: 10px;
 }
 
-#dropdownMenu1{
-    background: white;
-    border: none;
-    color: #e90052;
-    padding-top: 8px;
-    padding-bottom: 11px;
+#filter-btn:hover{
+	color: pink;
+}
+#reset-filter-btn{
+	
+	height: 30px;
+	background: #34495e;
+	position: relative;
+	left: 10px;
 }
 
-.league-drop li a:hover{
-    color: #e90052;
+#reset-filter-btn:hover{
+	
+	color:pink;
 }
 
-/*
-p {
-	font-family: 'Bree Serif', serif;
-}
-
-
-.container .row-select{
+#topo-tabela{
+	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	top: 173px;
 }
 
-.ln1 {
-
-   display: flex;
-   justify-content: center;
-	align-items: center;
-}
-
-.ln1 p{
-	font-size: 24px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.col-md-10 #table-list{
 	position: relative;
-	top: 130px;
-	right: 225px;
-
-}
-
-.select-inline{
-	position: relative;
-	top: 230px;
+	top: 270px;
 	left: 120px;
 }
 
-.select-inline ul{
-	list-style: none;
-	display: inline-flex;
+.centered tbody td{
+	padding: 12px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-.select-inline ul li{
-	margin: 10px;
+.centered tbody td img{
+	width: 35%;
+	padding: 0px;
+	margin: 0px;
+
+
 }
 
-  .button-select{
-  	color: white;
-	background: #27ae60;
-	border: none;
-	border-radius: 5px;
-	padding-left: 32px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	padding-right: 28px;
+.centered thead tr th{
+	font-family: 'Open Sans', sans-serif;
+} 
+
+.testeira{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	background: #34495e;
+
 }
 
-.button-submit{
-	color: white;
-	background: #2980b9;
-	border: none;
-	border-radius: 5px;
-	padding-left: 10px;
-	padding-top: 4px;
-	padding-bottom: 12px;
-	padding-right: 10px;
-}
-
-.row .button-submit .material-icons{
+.testeira h1{
+	display: flex;
 	position: relative;
-	top: 9px;
-	left: 5px;
+	bottom: 5px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+}
+
+#league-name-p{
+	display: initial;
+	text-align: center;
+	position: absolute;
+	right: 640px;
+	top:66px;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+}
+
+.footer{
+	position:fixed;
+    height:50px;
+    background-color:#34495e;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
+
+/*.col-md-12 #table-list-scout{
+	position: relative;
+	top: 270px;
+	left: 280px;
+	width: 80%;
 }*/
 
+.big-campo{
+	width: 100px;
+}
+
+#x{
+	width: 17%;
+	
+	color: #e90052;
+
+}
+
+/*#scout-select{
+	width: 17%;
+	color: #e90052;
+}
+#scout-filter-position{
+	display: flex;
+}
+#scout-filter-position , .col-md-3{
+     position: relative;
+	top: 100px;
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+}
+
+.row .col-md-3 select{
+	position: relative;
+	top: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#league-select-scout{
+	width: 55%;
+	color: #e90052;
+	display: flex;
+	left: 147px;
+}
+
+
+
+#select-scout{
+	
+	width: 55%;
+	color: #e90052;
+	
+	
+}
+
+#year-select-scout{
+   
+	width: 55%;
+	color: #e90052;
+	right: 145px;
+}
+
+#limit-select-scout{
+	  display: flex;
+	width: 55%;
+	color: #e90052;
+	right: 288px;
+}*/

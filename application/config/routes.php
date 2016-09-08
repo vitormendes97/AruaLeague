@@ -57,7 +57,9 @@ $route['home'] = 'Home/main';
 
 
 $route['tabela'] = 'Tabela/main';
+$route['tabela/(:num)'] = 'Tabela/loadTabela/$1';
 $route['rodada'] = 'Rodada/main';
+$route['scoute'] = 'Scoute/main';
 
 
 

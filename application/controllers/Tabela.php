@@ -24,20 +24,42 @@ class Tabela extends CI_Controller {
 	 */
 	public function main()
 	{      
-
-          $this->load->model('Tabela_model');
-          //Carrega a tabela de classificação do campeonato Master
-          list($sucesso_master,$erro,$tabela_master) = $this->Tabela_model->readMasterTable();
-          $dados = array();
-          $dados['sucesso_master'] = $sucesso_master;
-          $dados['tabela_master'] = $tabela_master;
-          //Fim do carregamento da tabela Master
-
          $this->load->view('Head');
         $this->load->view('Menu');
-        $this->load->view('Tabela',$dados);
+        $this->load->view('Tabela');
         $this->load->view('Footer');
         
+	}
+
+	public function loadTabela($table_id)
+	{
+           intval($table_id);  
+                      
+           $this->load->model('Tabela_model');
+           if($table_id != 1 && $table_id != 2){
+              echo "Erro ao Encontrar Tabela";
+           }
+           else if($table_id == 1){
+          list($sucesso,$erro,$tabela) = $this->Tabela_model->readMasterTable();
+             $dados = array();
+         $dados['sucesso'] = $sucesso;
+         $dados['erro'] = $erro;
+         $dados['tabela'] = $tabela;
+          header('Content-Type: application/json');
+          echo json_encode($dados);
+          }
+          else if($table_id == 2){
+            list($sucesso,$erro,$tabela) = $this->Tabela_model->readSuperMasterTable();
+            $dados = array();
+         $dados['sucesso'] = $sucesso;
+         $dados['erro'] = $erro;
+         $dados['tabela'] = $tabela;
+          header('Content-Type: application/json');
+          echo json_encode($dados);
+          }
+          else{
+            echo "Erro ao Encontrar Tabela";
+          }
 	}
 
     

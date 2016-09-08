@@ -1,0 +1,28 @@
+ul{
+    list-style-type: none;
+    background-color: brown;
+    margin:-8px;
+    overflow: hidden;
+}
+li {
+    float: left;
+   
+}
+li:hover{
+    background-color: darkorange;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 34px 40px 47px;
+    text-decoration: none;
+    font-family: Impact;
+}
+
+

@@ -38,9 +38,41 @@ class Tabela_model extends CI_Model
 
 
 
-		if(count($query->result() == 0)){
-			$sucesso = false;	
+		if(count($query->num_rows() > 0)){
+			return array($sucesso,$erro,$query->result());	
 		}
-		return array($sucesso,$erro,$query->result());
+      else{
+         $sucesso = $false;
+         return array($sucesso,$erro,$query->result());
+      }
+		
 	}
+
+   public function readSuperMasterTable(){
+      $this->load->database();
+      $sucesso = true;
+      $erro = 'tabela_002';
+
+        $this->db->select('*');
+         $this->db->from('tabela');
+         $this->db->join('clube','clube.id_clube = tabela.clube');
+         $this->db->join('liga','liga.id_liga = tabela.liga');
+         $this->db->where('tabela.liga', 2);
+         $this->db->order_by('pontos DESC , gol_pro DESC ');
+         $query = $this->db->get();
+
+
+
+      if(count($query->num_rows() > 0)){
+         return array($sucesso,$erro,$query->result());  
+      }
+      else{
+         $sucesso = $false;
+         return array($sucesso,$erro,$query->result());
+      }
+      
+   }
+
+  
+
 }
